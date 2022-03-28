@@ -98,9 +98,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "teste_coodesh"
+  "defaultProject": "teste_coodesh",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
